@@ -1,0 +1,35 @@
+.summary-bar {
+  height: 7px;
+  margin: 20px 0 15px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: rgba(255, 83, 99, 0.12);
+}
+
+.summary-allowed {
+  height: 100%;
+  border-radius: inherit;
+  background: #35e890;
+  box-shadow: 0 0 10px rgba(53, 232, 144, 0.35);
+  transition: width 0.3s ease;
+}
+
+.summary-values {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary-values div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.summary-values span {
+  color: #55738a;
+  font-size: 8px;
+}
+
+.summary-values strong {
+  font-size: 14px;
+}

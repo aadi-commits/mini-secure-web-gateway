@@ -1,0 +1,30 @@
+.traffic-filters {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.traffic-filters input,
+.traffic-filters select {
+  height: 32px;
+  padding: 0 10px;
+  border: 1px solid #173b56;
+  border-radius: 5px;
+  outline: none;
+  background: #061522;
+  color: #c9dceb;
+  font-size: 9px;
+}
+
+.traffic-filters input {
+  width: 210px;
+}
+
+.traffic-filters input::placeholder {
+  color: #48657b;
+}
+
+.traffic-filters input:focus,
+.traffic-filters select:focus {
+  border-color: #168fda;
+}

@@ -1,0 +1,8 @@
+{
+  "blockedDomains": [
+    "facebook.com",
+    "instagram.com",
+    "example-blocked.com",
+    "linkedin.com"
+  ]
+}

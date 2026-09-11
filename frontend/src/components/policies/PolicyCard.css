@@ -1,0 +1,62 @@
+.policy-card {
+  min-height: 68px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-bottom: 1px solid #10283b;
+}
+
+.policy-card-icon {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #e54858;
+  border-radius: 50%;
+  color: #ff5363;
+  font-size: 15px;
+}
+
+.policy-card-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.policy-card-main strong {
+  color: #d9e8f3;
+  font-size: 10px;
+}
+
+.policy-card-main span {
+  color: #55738a;
+  font-size: 8px;
+}
+
+.policy-card-status {
+  color: #ff5363;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+}
+
+/* Policy actions */
+.policy-delete {
+  padding: 7px 10px;
+  border: 1px solid #7a2632;
+  border-radius: 5px;
+  background: rgba(120, 25, 40, 0.10);
+  color: #ff5363;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.policy-delete:hover {
+  border-color: #ff5363;
+  background: rgba(255, 83, 99, 0.12);
+}

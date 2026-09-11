@@ -1,0 +1,69 @@
+.table-header,
+.traffic-row {
+  display: grid;
+  grid-template-columns:
+    105px
+    90px
+    minmax(150px, 1fr)
+    110px;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.table-header {
+  height: 38px;
+  color: #4d7088;
+  background: #071522;
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+
+.traffic-row {
+  min-height: 43px;
+  border-top: 1px solid #0d2639;
+  color: #8ca5b9;
+  font-size: 9px;
+}
+
+.traffic-row:hover {
+  background: rgba(0, 130, 220, 0.06);
+}
+
+.protocol {
+  color: #48a9e8;
+}
+
+.destination {
+  color: #d1dfeb;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.status {
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.status.allowed {
+  color: #35e890;
+}
+
+.status.blocked {
+  color: #ff5363;
+}
+
+.empty {
+  padding: 45px;
+  text-align: center;
+  color: #4c697e;
+}
+.full-traffic-table .traffic-list {
+  max-height: calc(100vh - 250px);
+  overflow-y: auto;
+}
+
+.full-traffic-table .traffic-row {
+  min-height: 48px;
+}

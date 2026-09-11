@@ -1,0 +1,44 @@
+.page-status {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #0b5148;
+  background: rgba(0, 100, 90, 0.12);
+  color: #35e890;
+  font-size: 9px;
+  letter-spacing: 0.8px;
+}
+
+.page-status.offline {
+  border-color: #7a2632;
+  background: rgba(120, 25, 40, 0.10);
+  color: #ff5363;
+}
+
+.full-traffic-panel {
+  overflow: hidden;
+}
+
+.full-traffic-header {
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #12304a;
+}
+
+.full-traffic-header h3,
+.policies-header h3 {
+  margin: 0;
+  color: #e7f3fd;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.full-traffic-header span,
+.policies-header span {
+  display: block;
+  margin-top: 5px;
+  color: #59778f;
+  font-size: 8px;
+}

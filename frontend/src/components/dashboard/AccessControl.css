@@ -1,0 +1,77 @@
+/* ================= RIGHT COLUMN ================= */
+
+.side-panel {
+  padding: 16px;
+}
+
+.side-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #12304a;
+}
+
+.side-header h2,
+.side-title h2,
+.system-title {
+  margin: 0;
+  color: #e9f5ff;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.side-header span,
+.side-title span {
+  display: block;
+  margin-top: 5px;
+  color: #5b7a91;
+  font-size: 8px;
+}
+
+.add-button,
+.primary-action {
+  padding: 7px 11px;
+  border: 1px solid #008fe8;
+  border-radius: 5px;
+  background: rgba(0, 130, 220, 0.15);
+  color: #53baff;
+  text-decoration: none;
+  font-size: 9px;
+}
+
+.add-button:hover,
+.primary-action:hover {
+  background: rgba(0, 130, 220, 0.25);
+}
+
+.policy {
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  border-bottom: 1px solid #10283b;
+  color: #b8cad8;
+  font-size: 9px;
+}
+
+.blocked-circle {
+  width: 18px;
+  height: 18px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #e54858;
+  border-radius: 50%;
+  color: #ff5363;
+}
+
+.side-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.side-symbol {
+  color: #27aaff !important;
+  font-size: 23px !important;
+}

@@ -1,0 +1,209 @@
+/* ================= NETWORK FLOW ================= */
+
+.topology-panel {
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.panel-header {
+  height: 54px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #12304a;
+}
+
+.title-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.panel-header h2 {
+  margin: 0;
+  color: #e8f4ff;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.live {
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: rgba(53, 232, 144, 0.08);
+  color: #35e890;
+  font-size: 8px;
+}
+
+.live.offline-badge {
+  background: rgba(255, 83, 99, 0.10);
+  color: #ff5363;
+}
+
+.traffic-flow {
+  color: #36aaf0;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.topology {
+  height: 245px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  background-image: radial-gradient(
+    circle,
+    rgba(0, 150, 255, 0.08) 1px,
+    transparent 1px
+  );
+  background-size: 13px 13px;
+}
+
+.node {
+  width: 155px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid #1b527a;
+  border-radius: 9px;
+  background: rgba(5, 18, 31, 0.95);
+  transition: 0.25s;
+}
+
+.node:hover {
+  border-color: #2daaff;
+  transform: translateY(-2px);
+}
+
+.node-icon {
+  width: 42px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #1a689b;
+  color: #28adff;
+  font-size: 19px;
+}
+
+.node strong {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.node span {
+  color: #62829b;
+  font-size: 9px;
+}
+
+.gateway {
+  border-color: #00aaff;
+  box-shadow:
+    0 0 30px rgba(0, 160, 255, 0.13),
+    inset 0 0 30px rgba(0, 160, 255, 0.05);
+}
+
+.gateway-glow {
+  width: 44px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  color: #35e890;
+  border: 1px solid #24a97b;
+  box-shadow: 0 0 15px rgba(53, 232, 144, 0.12);
+}
+
+.connection {
+  width: 135px;
+  text-align: center;
+  color: #5c7c94;
+  font-size: 8px;
+}
+
+.flow-line {
+  height: 2px;
+  margin: 10px 0;
+  position: relative;
+  background: linear-gradient(90deg, #087bc3, #35e890, #087bc3);
+  box-shadow: 0 0 8px rgba(0, 180, 255, 0.45);
+}
+
+.flow-line i {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: -2px;
+  left: 25%;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 0 8px #35e890;
+  animation: flow 2s linear infinite;
+}
+
+.connection small {
+  color: #4e7088;
+  font-size: 8px;
+}
+
+@keyframes flow {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+.gateway-offline .gateway {
+  border-color: #4b5360;
+  box-shadow: none;
+}
+
+.gateway-offline .gateway-glow {
+  color: #7a8794;
+  border-color: #4b5360;
+  box-shadow: none;
+}
+
+.gateway-offline .flow-line {
+  background: #344452;
+  box-shadow: none;
+  opacity: 0.65;
+}
+
+.gateway-offline .flow-line i {
+  display: none;
+}
+
+.gateway-offline .node {
+  border-color: #263b4d;
+  box-shadow: none;
+  opacity: 0.72;
+}
+
+.gateway-offline .connection {
+  color: #455b6d;
+}
+
+.gateway-offline .gateway-features {
+  color: #718293;
+}
+
+.gateway-offline .gateway-features span:last-child {
+  color: #ff5363;
+}
+
+.gateway-features {
+  min-height: 45px;
+  padding: 0 20px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  color: #7aa1bb;
+  font-size: 9px;
+}
